@@ -1,0 +1,6 @@
+t = linspace(0, 1, 10);
+c = linspace(1, 10, 10);
+
+
+
+surf(TT, CC, X);
