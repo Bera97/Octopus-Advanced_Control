@@ -16,3 +16,4 @@ figure(1)
 quiver(XX,YY,U,V, 'k', 'LineWidth',1.2)
 xlim([x_start-0.05 x_end+0.05])
 ylim([y_start-0.05 y_end+0.05])
+grid on;

@@ -39,4 +39,6 @@ for dt = t_start:step:t_end
     X = X + (K1 + 2.*K2 + 2.*K3 + K4).*step./6;
     counter = counter + 1;
 end
+
 plot(data(1, :), data(2,:));
+grid on;

@@ -1,6 +1,6 @@
 clear;
 close all;
-t = linspace(0, 10, 100);
+t = linspace(0, 6, 100);
 
 for c = 1:10
     x = c.*sin(t).*exp(-t);
@@ -13,3 +13,5 @@ for c = 1:10
     hold on;
     
 end
+
+grid on;
