@@ -6,7 +6,7 @@ x_end = 3;
 y_end = 3;
 
 X_sp = 2;
-Y_sp = -3;
+Y_sp = 2;
 X = [X_sp;Y_sp];
 
 step = 0.01;

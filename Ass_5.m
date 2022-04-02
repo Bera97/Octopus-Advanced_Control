@@ -16,7 +16,7 @@ t_end = 1000;
 
 counter = 1;
 
-[YY, XX] = meshgrid(x_start:0.1:x_end,y_start:0.1:y_end);
+[XX, YY] = meshgrid(x_start:0.1:x_end,y_start:0.1:y_end);
 
 f = {@(x,y)x.*(1-y); @(x,y)y.*(x-1)};
 

@@ -1,11 +1,11 @@
 clear all;
 
-x_start = 0;
-y_start = 0;
-x_end = 2;
-y_end = 2;
+x_start = -1;
+y_start = -1;
+x_end = 1;
+y_end = 1;
 
-[YY, XX] = meshgrid(x_start:0.1:x_end,y_start:0.1:y_end);
+[XX, YY] = meshgrid(x_start:0.1:x_end,y_start:0.1:y_end);
 
 f = {@(x,y)x.*(1-y); @(x,y)y.*(x-1)};
 
