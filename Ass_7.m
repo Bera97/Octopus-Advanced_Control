@@ -1,3 +1,8 @@
+%% Clear Everything
+clc;
+clear;
+close all;
+
 %% Model Specifications
 
 % Spring Stiffness
@@ -49,25 +54,28 @@ u = 0;
 
 % Time Information
 dt = 0.001;
-end_time = 1000;
+end_time = 500;
 steps = 0;
 
+%% Simulation
 for t = 0:dt:end_time
+    % Euler Integration
     x = x + model(x, u)*dt;
     u = -x(4);
 
+    % Storing the results
     steps = steps + 1;
     buffer_x(:, steps) = x;
     buffer_u(:, steps) = u;
     buffer_t(:, steps) = t;
 end
 
+%% Plot
 plot(buffer_t(1, :), buffer_x(1, :))
 hold on;
 plot(buffer_t(1, :), buffer_x(2, :))
 xlabel('Time (seconds)');
 ylabel('Position of Masses')
-
 legend('Mass 1 position', 'Mass 2 position')
 
 
