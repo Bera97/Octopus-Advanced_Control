@@ -121,16 +121,25 @@ legend('Desired Trajectory', 'Actual Trajectory');
 figure;
 subplot(1,3,1);
 plot(buffer_t(1, :), buffer_x(1, :))
+hold on
+plot(buffer_t(1, :), x_t(buffer_t(1, :)))
 xlabel('Time (seconds)');
 ylabel('X (meters)');
+legend('Actual Trajectory', 'Desired Trajectory');
 
 subplot(1,3,2);
 plot(buffer_t(1, :), buffer_x(2, :))
+hold on
+plot(buffer_t(1, :), y_t(buffer_t(1, :)))
 xlabel('Time (seconds)');
 ylabel('Y (meters)');
+legend('Actual Trajectory', 'Desired Trajectory');
 
 subplot(1,3,3);
 plot(buffer_t(1, :), buffer_x(3, :))
+hold on
+plot(buffer_t(1, :), z_t(buffer_t(1, :)))
 xlabel('Time (seconds)');
 ylabel('Z (meters)');
+legend('Actual Trajectory', 'Desired Trajectory');
 
