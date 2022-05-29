@@ -60,7 +60,7 @@ steps = 0;
 %% Simulation
 for t = 0:dt:end_time
     % Euler Integration
-    x = x + model(x, u)*dt;
+    x = x + model(x, u).*dt;
     u = -x(4);
 
     % Storing the results
